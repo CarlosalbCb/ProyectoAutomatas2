@@ -1,0 +1,5 @@
+public class main { 
+public int x = x 
+if(x>5)
+public int hola=3
+}
