@@ -3,6 +3,8 @@ import tiposNJ.*;
 import java.util.Stack;
 import java.util.Vector;
 
+import javax.swing.JTree;
+
 public class Sintactico {
 	Stack<TiposNJ> pila = new Stack<TiposNJ>(); //Pila para almacenar las clases de tokens 
 	public Sintactico(CreaTokens tokens){
@@ -12,6 +14,7 @@ public class Sintactico {
 	
 	public void OrganizarTokens(Vector palabras){
 		int contador=0;
+		JTree arbol=new JTree();
 		while(palabras.size()>contador){
 			switch (palabras.elementAt(contador).toString()){ 
 //Toma el valor del token(las palabras en el vector) y lo convierte en un objeto para asignarle un tipo
