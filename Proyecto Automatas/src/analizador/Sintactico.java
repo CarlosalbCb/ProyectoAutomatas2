@@ -17,8 +17,8 @@ public class Sintactico {
 //Toma el valor del token(las palabras en el vector) y lo convierte en un objeto para asignarle un tipo
 				case "public": pila.add(new PalabraReservadaNJ(palabras.elementAt(contador).toString(),1));contador++; break;
 				case "class":  pila.add(new PalabraReservadaNJ(palabras.elementAt(contador).toString(),1));contador++; break;
-				case "int":    pila.add(new TipoVarNJ(palabras.elementAt(contador).toString(),2));         contador++;break;
-				case "boolean":pila.add(new TipoVarNJ(palabras.elementAt(contador).toString(),2));         contador++;break;
+				case "int":    pila.add(new VarDeclaracionNJ(palabras.elementAt(contador).toString(),2));         contador++;break;
+				case "boolean":pila.add(new VarDeclaracionNJ(palabras.elementAt(contador).toString(),2));         contador++;break;
 				case "if":     pila.add(new IfNJ(palabras.elementAt(contador).toString(),3));contador++;break;
 				case "while":  pila.add(new WhileNJ(palabras.elementAt(contador).toString(),4));contador++;break;
 				case "{":	   pila.add(new LBraceNJ(palabras.elementAt(contador).toString(),5)) ;contador++;break;

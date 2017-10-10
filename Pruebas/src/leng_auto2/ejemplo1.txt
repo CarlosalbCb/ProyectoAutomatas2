@@ -1,0 +1,9 @@
+int a;
+int b;
+int c;
+int d;
+
+a=b;
+if(a==b)
+while(c==d)
+b=c;

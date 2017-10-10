@@ -1,0 +1,20 @@
+PROYECTO #1
+Implementar un scanner y un parser (recursivo descendente) en Java para la gramática siguiente.
+La salida del parser será un árbol sintático. 
+
+GRAMÁTICA
+Program -> varDeclaration* Statement* <EOF>
+varDeclaration -> ("int" | "boolean") Identifier ";"
+Statement -> Identifier "=" Expression ";"
+Statement -> "if" "(" Expression ")"
+						Statement
+Statement -> "while" "(" Expression ")"
+						Statement
+Expression -> Identifier ("==" | "+") Identifier | Identifier
+Identifier -> letra (letra | digito)*
+
+PROYECTO #2 
+Implementar el análisis de semántica a partir del trabajo anterior (Proyecto #1). 
+El análisis semántico consistirá en recorrer el árbol sintáctico (la parte izquierda) para crear la tabla de símbolos
+y después, recorrer la parte derecha para realizar el chequeo de tipos. Si el programa fuente no tiene errores, entonces 
+se generará alguna representación intermedia: triples, cuadruples o bytecode. 
