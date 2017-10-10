@@ -28,7 +28,7 @@ public class Lexico {
 	//Separa el codigo en tokens de Tokens
 	try{
 		tokens= new CreaTokens(texto);
-		tokens.ImprimeTokens();
+		//tokens.ImprimeTokens();
 	}catch(NullPointerException e){
 		System.out.println("Programa detenido");
 	}

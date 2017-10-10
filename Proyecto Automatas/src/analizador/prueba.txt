@@ -1,5 +1,5 @@
-public class main { 
-public int x = x 
+int x = 3;
 if(x>5)
-public int hola=3
-}
+int hola=3;
+while(x<3)
+boolean var=true;

@@ -38,7 +38,7 @@ public class CreaTokens {
 	}
 	public boolean revisaAlfabeto(String texto){
 		boolean correcto=true;
-		String REG_EXP = "[\\d]+[a-zA-Z]+|\\¿+|\\?+|\\°+|\\¬+|\\|+|\\!+|\\#+|\\$+|\\%+|\\&+|\\+|\\’+|\\¡+|\\~+|\\[+|\\]+|\\^+";		
+		String REG_EXP = "[\\d]+[a-zA-Z]+|\\¿+|\\?+|\\°+|\\¬+|\\|+|\\!+|\\#+|\\$+|\\%+|\\&+|\\+|\\’+|\\¡+|\\~+|\\[+|\\]+|\\^+|\\{+|\\}+";		
 		Pattern pattern = Pattern.compile(REG_EXP);
 		Matcher matcher = pattern.matcher(texto);
 		if(matcher.find()){

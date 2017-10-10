@@ -5,6 +5,7 @@ public class VarDeclaracionNJ {
 	private boolean varBool;
 	IdentificadorNJ id;
 	SemiNJ semi;
+	
 	public VarDeclaracionNJ(int var, IdentificadorNJ ID, SemiNJ SEMI) {
 		varInt=var;
 		id=ID;
